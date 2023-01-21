@@ -1,0 +1,28 @@
+debug: true
+server:
+
+  port: 8083
+ 
+
+spring:
+
+  mandatoryFileEncoding: UTF-8
+  spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;database=FlowablaDemo;
+    username: hargun
+    password: hargun
+    tomcat.connection-properties: useUnicode=yes;characterEncoding=utf-8;
+ 
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    show-sql: false
+ 
+
+
+ 
